@@ -347,7 +347,8 @@ def _check_return(ret, description):
     """ check the return value of a read, raise exception if its not OK """
     if ret == "":
         raise TimeoutException(description)
-    if OptiCAL._NACK in ret:
+    # check the last byte only
+    elif ret[-1] == OptiCAL._NACK:
         raise NACKException(description)
 
 

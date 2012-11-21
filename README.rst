@@ -29,6 +29,22 @@ documentation
 
 Please see the docstring for the pyoptical module.
 
+changelog
+--------------------
+
+* 0.4 - XXXX-XX-XX
+
+  * Fix long standing bug where some luminance values incorrectly caused an
+    error because the NACK byte was present in the ADC value and not only the
+    last byte, which contains the ack value was checked.
+
+* 0.3 - 2010-07-26
+
+  * Initial implementation
+  * Support command line interface and module readout
+  * Extensive documentation for use on all major OSs
+  * Contains changes from both early alphas, 0.1. and 0.2
+
 author
 --------------------
 

@@ -32,7 +32,7 @@ Please see the docstring for the pyoptical module.
 author
 --------------------
 
-Valentin Haenel <valentin.haenel@gmx.de>
+Copyright (C) 2009-2012 Valentin Haenel <valentin.haenel@gmx.de>
 
 copying
 --------------------

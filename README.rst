@@ -36,7 +36,8 @@ changelog
 
   * Fix long standing bug where some luminance values incorrectly caused an
     error because the NACK byte was present in the ADC value and not only the
-    last byte, which contains the ack value was checked.
+    last byte, which contains the ack value was checked. Thanks to Ivan
+    Prikhodko.
 
 * 0.3 - 2010-07-26
 

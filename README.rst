@@ -14,11 +14,11 @@ pyserial
 install
 --------------------
 
-Available in Debian as 'python-pyoptical', to install run:
+Available in Debian as 'python-pyoptical', to install run::
 
   apt-get install python-pyoptical
 
-Installation from source:
+Installation from source::
 
   ./setup.py install
 

@@ -32,7 +32,7 @@ Please see the docstring for the pyoptical module.
 changelog
 --------------------
 
-* 0.4 - XXXX-XX-XX
+* 0.4 - 2012-11-21
 
   * Fix long standing bug where some luminance values incorrectly caused an
     error because the NACK byte was present in the ADC value and not only the

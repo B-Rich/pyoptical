@@ -38,22 +38,22 @@ if __name__ == "__main__":
     parser = OptionParser(usage=usage, version=version)
 
     parser.add_option("-i", "--interval",
-            action = "store",
-            type = "float",
-            dest = "interval",
-            default = 0.0,
-            help = "the measurement interval in ms, default is as fast as possible")
+            action="store",
+            type="float",
+            dest="interval",
+            default=0.0,
+            help="the measurement interval in ms, default is as fast as possible")
     parser.add_option("-n", "--number",
-            action = "store",
-            type = "int",
-            dest = "number",
-            default = None,
-            help = "number of measurements to make, default is endless")
+            action="store",
+            type="int",
+            dest="number",
+            default=None,
+            help="number of measurements to make, default is endless")
     parser.add_option("-r", "--robust",
-            action = "store_true",
-            dest = "robust",
-            default = False,
-            help = "when encountering an error, try to continue ignoring as many exceptions as possible")
+            action="store_true",
+            dest="robust",
+            default=False,
+            help="when encountering an error, try to continue ignoring as many exceptions as possible")
 
     opts, args = parser.parse_args()
     if len(args) != 1:
@@ -66,11 +66,10 @@ if __name__ == "__main__":
     for i in repeat(None) if opts.number is None else repeat(None, opts.number):
         try:
             print op.read_luminance()
-            time.sleep(opts.interval/1000)
+            time.sleep(opts.interval / 1000)
         except pyop.OptiCALException, e:
             sys.stderr.write(error_prefix + str(e) + "\n")
             if opts.robust:
                 continue
             else:
                 sys.exit(-1)
-

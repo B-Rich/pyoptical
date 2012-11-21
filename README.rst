@@ -1,5 +1,5 @@
-README for pyoptical
-====================
+pyoptical
+=========
 
 about
 --------------------
@@ -14,7 +14,7 @@ pyserial
 install
 --------------------
 
-Available in Debian as 'python-pyoptical', to install run::
+Available in Debian as ``python-pyoptical``, to install run::
 
   apt-get install python-pyoptical
 
